@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 
@@ -9,6 +10,9 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <h2>
+          <Link href="/posts/first-post">Check out this post</Link>
+        </h2>
         <p>Welcome to my sample blog!</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
